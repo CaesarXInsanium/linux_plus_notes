@@ -70,8 +70,8 @@ alias update="sudo apt update;sudo apt upgrade"
 
  Files to edit
 
- - /etc/profile -> set environment info for all users on first login
- - /etc/bashrc -> executes for all users. can be override by $HOME/.bashrc
+- /etc/profile -> set environment info for all users on first login
+- /etc/bashrc -> executes for all users. can be override by $HOME/.bashrc
  - ~/.bash_profile -> same as /etc/profile
  - ~/.bashrc -> set for each individual user on summoning terminal
 
@@ -104,6 +104,33 @@ list of directories that contain executables
 
 typing help will show reserved commands associated with shell and what they do.
 
+- options include the "info" command and "man" command
+- pass "--help" to command to show snippet of command usage in most cases
+
 ```bash
-Help
+help
+```
+
+## Man Page Sections
+
+1. User Commands: commands that can be runb regular user
+2. System Calls: programming functions that makes calls to kernel
+3. c library Functions: provide interface to specifc programming libraries
+4. DEvices and Special Files: Filesystems nodes represent the hardware devices 
+5. File formats and conventions: types of files, binary layout
+6. games: games
+7. miscallenous: overview of protocols, filesystems, character set standards and so fort
+8. system administration tools and daemons
+
+passing the man command will search the man database or show the man page for specifc command
+
+```bash 
+man man
+```
+
+## Exercies Answers
+
+command to output the date in M/D/Y format is
+```bash
+date "+%D"
 ```
