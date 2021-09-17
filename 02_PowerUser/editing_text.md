@@ -14,7 +14,7 @@ book continues into a vi tutorial. here are some pointers
 - right l
 - there are two modes. command and input
 
-### Keys: no colon
+### **Keys**:🔥 no colon
 **a** ->  enter input mode at right of cursor
 
 **A** -> enter input at end ofg line. ooh yeah
@@ -27,9 +27,9 @@ book continues into a vi tutorial. here are some pointers
 
 **O** -> open above in insert mode
 
-### Movement
+### **Movement**
 
-only a dirty pleb would use arrow keys in vim. 
+*only a dirty pleb would use arrow keys in vim.*
 
 **w** -> move to beginning of next word
 
@@ -150,9 +150,7 @@ to begin search use "/" or "?". give pattern to search for and enter. here are e
 
 vi editor is based off of the ex editor. still has some of those commands. Ex editor does not have fullscreen mode so editing was done by finding specific lines of text and editing them. Not important for what I am trying to do
 
-
-
-## Alternative Editors
+### Alternative Editors
 
 - nano : terminal based, user friendly
 - gedit: gtk based graphical editor. use in gnome
@@ -161,5 +159,3 @@ vi editor is based off of the ex editor. still has some of those commands. Ex ed
 - kedit: same as kate
 - mcedit: uses function keys to move around and for common function.
 - nedit: 
-
-## Finding Files 
