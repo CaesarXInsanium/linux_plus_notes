@@ -35,4 +35,36 @@ locate command will find anything that has the INPUT in the path text
 
 ## Find: Searching files
 
-considered to be the better one for finding files. 
+considered to be the better one for finding files. will search filesystem live but will allow for custom starting point to make search faster. all file attribute can be used as search option.
+
+```bash
+find # will find everything in the CWD. 
+find /etc # error since normal user cannot read /etc
+sudo find /etc # list all files and directories in /etc
+find $HOME -ls # gives long listing of the things being searched for
+```
+### Finding Files By Name
+
+passing `-name` and `-iname` opdations will search directory for the passed string in the filename
+
+```bash
+find /etc -name passwd # will find the files with strictly the string "passwd" as name
+
+find /etc/ -iname '*passwd*' # fill find files with "passwd in any part of filename
+```
+
+### Fine by Size
+
+`-size` will allow to pass a size and find files that meet or exceed the expecifiend file size
+
+```bash
+find /usr/share -size +10m # find files greater than 10 megabytes
+
+find /mostlybig -size -1m # find files smaller than 1 megabytes
+
+find /bigdata -size +500m -size -5G # find files that are bigger than 500m and smaller than 5G
+```
+
+### Find by user
+
+`-user` will search for files by owner/username. please note that this would require either root or appropiate permissions for that user's files
